@@ -47,56 +47,51 @@ const SocialLinks = () => {
 
   return (
     <div>
-      <a 
-        href="#" 
+      <button
         onClick={(e) => {
           e.preventDefault();
           handleClick(siteProps.gitHub);
         }}
       >
         GitHub
-      </a>
-      <a 
-        href="#" 
+      </button>
+      <button
         onClick={(e) => {
           e.preventDefault();
           handleClick(siteProps.instagram);
         }}
       >
         Instagram
-      </a>
-      <a 
-        href="#" 
+      </button>
+      <button
         onClick={(e) => {
           e.preventDefault();
           handleClick(siteProps.linkedIn);
         }}
       >
         LinkedIn
-      </a>
-      <a 
-        href="#" 
+      </button>
+      <button
         onClick={(e) => {
           e.preventDefault();
           handleClick(siteProps.twitter);
         }}
       >
         Twitter
-      </a>
-      <a 
-        href="#" 
+      </button>
+      <button
         onClick={(e) => {
           e.preventDefault();
           handleClick(siteProps.youTube);
         }}
       >
         YouTube
-      </a>
+      </button>
     </div>
   );
 };
 
-export default SocialLinks;
+export { SocialLinks };
 
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
