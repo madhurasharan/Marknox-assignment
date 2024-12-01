@@ -33,7 +33,7 @@ const siteProps = {
   linkedIn: "satyanadella",
   medium: "",
   twitter: "microsoft",
-  youTube: "Code",
+  youTube: "",
 };
 const SocialLinks = () => {
   // A function to handle the click event
