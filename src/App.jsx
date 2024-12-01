@@ -35,6 +35,68 @@ const siteProps = {
   twitter: "microsoft",
   youTube: "Code",
 };
+const SocialLinks = () => {
+  // A function to handle the click event
+  const handleClick = (url) => {
+    if (!url) {
+      // Prevent redirection if URL is empty
+      return;
+    }
+    window.open(url, "_blank");
+  };
+
+  return (
+    <div>
+      <a 
+        href="#" 
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick(siteProps.gitHub);
+        }}
+      >
+        GitHub
+      </a>
+      <a 
+        href="#" 
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick(siteProps.instagram);
+        }}
+      >
+        Instagram
+      </a>
+      <a 
+        href="#" 
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick(siteProps.linkedIn);
+        }}
+      >
+        LinkedIn
+      </a>
+      <a 
+        href="#" 
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick(siteProps.twitter);
+        }}
+      >
+        Twitter
+      </a>
+      <a 
+        href="#" 
+        onClick={(e) => {
+          e.preventDefault();
+          handleClick(siteProps.youTube);
+        }}
+      >
+        YouTube
+      </a>
+    </div>
+  );
+};
+
+export default SocialLinks;
 
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
